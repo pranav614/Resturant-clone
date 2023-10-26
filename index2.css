@@ -1,0 +1,186 @@
+@media (max-Width:1265px) {
+    .collection{
+        grid-template-columns: 200px 200px 200px 200px ;
+    }
+    .sideMenu{
+        width:70%;
+    }
+.menuContainer{
+    display: flex;
+        flex-direction: column;
+        gap:10px;
+        align-items: center;
+}}
+@media (max-width:1233px){
+    .main{
+        flex-direction: column-reverse;
+    }
+    .menuContainer{
+        display: flex;
+      flex-direction: row;
+   width:100%;
+   justify-content: center;
+
+      
+            align-items: center;
+    }
+    .collection{
+        padding:0 50;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        border-top: 1px solid black;
+        width:100%;
+        margin:20px auto;
+        padding: 0;
+        text-align: center;
+       
+
+    }
+    .sideMenu{
+        width:30%;
+        margin-left:0
+    }
+    .main-Column2{
+    width:100%;
+    }
+    .main-Column1{
+        width:100%;
+        }
+}
+
+
+@media (max-width:950px) {
+    .collection{
+        grid-template-columns: 200px 200px 200px  ;
+    }
+}
+@media (max-width:785px) {
+    .collection{
+        grid-template-columns: 200px 200px 200px;
+        gap:10px;
+    }
+    nav img{
+        margin:0;
+    }
+    nav div{
+        gap:0;
+    }
+    .imgContainer{
+        width:fit-content
+    }
+    nav div span p{
+        /* font-size: 14px; */
+        width:50%;
+    }
+}
+@media (max-width:720px) {
+    .collection{
+        grid-template-columns: 175px 175px 175px;
+        gap:10px;
+    }
+    .title{
+        font-size: 14px;;
+    }
+    .sideMenu{
+        width:30%;
+        font-size: 14px;
+    }
+    .sideImg{
+        margin-left:10px;
+    }
+    .offerButton{
+        display:none;
+    }
+    
+ 
+}
+@media (max-width:685px){
+    nav img{
+        margin:0;
+    }
+    nav div{
+        gap:0;
+    }
+    .imgContainer{
+        width:fit-content
+    }
+    nav div span p{
+        /* font-size: 14px; */
+        width:50%;
+    }
+        
+    
+}
+@media(max-width:665px){
+    nav div span p{
+        font-size: 14px;
+        width:50%;
+    }
+    nav ul{
+        gap:10px;
+    }
+}
+@media(max-width:620px){
+    .menuContainer{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* justify-content: start;
+        align-items: start; */
+
+    }
+    .sideMenu{
+        margin:0 50px;
+        width:50%;
+    }
+}
+@media(max-width:570px){
+    .mainTitle{
+        display:none;
+    }
+    .collection{
+        grid-template-columns: 220px 220px  ;
+    }
+    nav ul{
+        padding: 0;
+    }
+}
+@media(max-width:440px){
+    .collection{
+        grid-template-columns: 250px   ;
+    }
+    .foodSearch{
+     all:unset;
+     border: 1px solid black;
+     border-radius: 10px;;
+    
+    }
+    .searchButton{
+        display:none;
+        
+    }
+
+}
+@media(max-width:400px){
+ 
+        #search{
+            width:100%;
+            margin-left: 3px;;
+            
+        }
+        nav ul{
+            font-size: 10px;;
+        }
+    
+}
+@media(max-width:320px){
+    #search{
+        width:80%;
+        margin-left: 3px;;
+        
+    }
+    nav ul{
+        font-size: 10px;;
+    }
+}

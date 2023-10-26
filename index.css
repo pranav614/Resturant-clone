@@ -1,0 +1,358 @@
+html{
+    scroll-behavior: smooth;
+}
+section{
+    margin-top: 100px;
+}
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0px;
+    font-family: poppins;
+    background-color: bisque;
+}
+
+nav div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+
+}
+nav div span{
+    position: relative;
+    cursor: pointer;
+}
+nav div span::before{
+    
+    position:absolute;
+    content:'';
+    
+    height:2px;
+    
+    /* left:0; */
+    right:0;
+    bottom:-10px;
+    transition:all ease-in-out 0.3s;
+    transform: scaleX(0);
+}
+
+.priceDiv{
+    display:flex;
+  
+    
+}
+nav div span:hover:before{
+width:100%;
+background-color: black;
+   transform: scaleX(1);  
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+background-color: orange;
+    
+
+}
+.totalContainer{
+ text-align: end;
+ position:sticky;
+ bottom:10%;
+ 
+ 
+}
+nav img{
+    height: 50px;
+    width:50px;
+    border-radius: 30px;
+    margin-left: 8px;
+
+    
+}
+.foodSearch{
+    position: absolute;
+    left: -220px;;
+   border-radius: 10px;
+   border:1px solid black;
+ color:black;
+   display: none;
+  width:600%;
+  padding:8px 5px;
+  transition:all ease-in-out 0.3;
+ font-family: poppins;
+
+}
+.divSearch{
+position: relative;
+
+
+}
+h2{
+    padding:0px 50px;
+}
+.searchButton{
+    padding:8px 10px;
+    border-radius: 50%;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+  
+}
+.searchImg{
+    cursor: pointer;
+}
+
+.inputCheck{
+    display:none;
+
+}
+.inputCheck:checked ~ .foodSearch{
+display: block;
+
+
+}
+
+
+nav div span{
+    padding:0px 10px;
+    font-family: poppins;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    padding: 0px 20px;;
+}
+.offerButton{
+  
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+    padding:5px;
+    border-radius:20px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#addCart{
+    padding:3px;
+    cursor: pointer;
+}
+
+.foodImg{
+border-radius: 50%;
+}
+.cartImg{
+    cursor: pointer;
+}
+.cartButton {
+    padding:6px;
+    border-radius:20px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.accountButton{
+    font-size: 15px;
+    padding:6px 8px;;
+    border-radius:20px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.path{
+    background-color:black;
+}
+.main-Column1{
+    width:75%;
+    
+    
+}
+.main-Column2{
+    width:25%;
+   
+    display: flex;
+
+    flex-direction:column;
+    gap:10px;
+    
+}
+
+.main{
+    display: flex;
+}
+.menu,.d1{
+    text-align: center;
+}
+.foodImg{
+    height:150px;
+    width:150px;
+    object-fit: fill;
+    object-position: center;
+}
+.dishContainer{
+display:flex;
+flex-direction: column;
+gap:5px;
+
+border-radius: 5px;
+box-shadow: 10px;;
+background-color: rgb(226, 212, 195);
+}
+.ratingContainer{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:3px;
+}
+
+.mainTitle p{
+text-align: center;
+margin:0;
+padding: 0;
+}
+.collection{
+    padding:0px 50px;
+    display:grid;
+    grid-template-columns: 200px 200px 200px 200px ;
+    gap:40px;
+}
+.sideImg{
+    height:50px;
+    width:50px;
+    margin-left:20px;
+    border-radius:50%;
+    object-fit: cover;
+}
+
+.sideMenu{
+    display: flex;
+    align-items: center;
+    width:80%;
+    gap:10px;
+    background-color:rgb(226, 212, 195);
+    padding: 5px 0px;
+    height: auto;
+    margin-left: 30px;
+    border-radius:10px;
+    
+   
+}
+.sideTitle{
+    text-decoration: none;
+    list-style: none;
+    color:black;
+    
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin:auto;
+    
+}
+.title{
+    padding:10px;
+    margin: 0;
+}
+.price{
+margin:0;
+    padding:10px;
+}
+
+.hello{
+    width:350px;;
+    border:1px solid black;
+}
+.componentList{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: start;
+    overflow: hidden;
+    padding:0 0px 0px 15px;
+
+}
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  
+}
+.cartList{
+    border-radius:10px;
+    
+}
+@media(max-width:700px){
+    .cartList{
+        display: flex;
+        flex-direction: column;
+    }
+    .hello{
+        width:200px;
+    }
+}
+@media(max-width:600px){
+    .hello{
+        width:fit-content;
+        font-size: 12px;
+    }
+}
+@media(max-width:400px){
+    .hello{
+        width:fit-content;
+        font-size: 12px;
+    }
+}
+.cart p{
+    opacity:0;
+}
+.cart-price-container{
+    gap:30px;
+}
+
+.cart{
+     all:unset;
+     width:60%;
+     background-color:white;
+     color: black;
+     height:100vh;
+     position: absolute;
+     top:84px;
+     right: 0;
+     transform: translateY(100%);
+     /* transform:scaleX(0,1); */
+     transition: 300ms ease-in-out;
+     overflow-y: scroll;
+     opacity: 0;
+     z-index: 100; 
+     
+ }
+#cartCheck:checked ~ .cart{
+    opacity: 1;
+    /* transform: scale(1,1); */
+   
+
+    transform:translateY(0%)
+}
+#cartCheck:checked ~ .cart p{
+    opacity: 1;
+}
+#cartCheck{
+    display:none;
+}
+.headingCart{
+    text-align: center;
+
+}
+
